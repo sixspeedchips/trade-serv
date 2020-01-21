@@ -21,17 +21,17 @@ public class AppStartupRunner implements ApplicationRunner {
 
   @Override
   public void run(ApplicationArguments args) throws Exception {
-    tb.populateCoinPairings();
-    new Thread(()->{
-      while (true){
-        tb.fullTickerQuery();
-        try {
-          Thread.sleep(2000);
-        } catch (InterruptedException ignored) { }
-      }
-
-
-    }).start();
+//    tb.populateCoinPairings();
+//    new Thread(()->{
+//      while (true){
+//        tb.fullTickerQuery();
+//        try {
+//          Thread.sleep(2000);
+//        } catch (InterruptedException ignored) { }
+//      }
+//
+//
+//    }).start();
 
   }
 }
